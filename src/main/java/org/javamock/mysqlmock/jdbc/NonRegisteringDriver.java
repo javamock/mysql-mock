@@ -12,6 +12,18 @@ public class NonRegisteringDriver implements java.sql.Driver{
 
     public NonRegisteringDriver(){
     }
+
+    // 大版本号: 这个版本号实际上应该用构建工具注入;
+    @Override
+    public int getMajorVersion() {
+        return 1;
+    }
+
+    // 小版本号; 这个版本号实际上应该用构建工具注入;
+    @Override
+    public int getMinorVersion() {
+        return 1;
+    }
     @Override
     public Connection connect(String url, Properties info) throws SQLException {
         return null;
@@ -25,16 +37,6 @@ public class NonRegisteringDriver implements java.sql.Driver{
     @Override
     public DriverPropertyInfo[] getPropertyInfo(String url, Properties info) throws SQLException {
         return new DriverPropertyInfo[0];
-    }
-
-    @Override
-    public int getMajorVersion() {
-        return 0;
-    }
-
-    @Override
-    public int getMinorVersion() {
-        return 0;
     }
 
     @Override
