@@ -8,6 +8,7 @@
 
 - TestContainers(推荐) : [https://testcontainers.com/](https://testcontainers.com/)
 - Embedded MySql : [wix-embedded-mysql](https://github.com/wix-incubator/wix-embedded-mysql)
+- h2 database: [h2database](https://github.com/h2database/h2database)
 
 ## 规划
 

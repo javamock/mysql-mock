@@ -37,7 +37,7 @@ public class TestJDBCDriver extends BaseTest {
         doTestDeregisterDriver();
         doTestDeregisterDriver();
 
-        // 3. 还原驱动,避免其他地方需要;
+        // 3. 还原驱动注册,避免其他地方需要;
         doTestDriverRegister();
 
     }
